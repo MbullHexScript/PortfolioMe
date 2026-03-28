@@ -13,14 +13,14 @@ export default function App() {
   return (
     <>
       <Cursor />
-      {/* Background effects */}
+      {/* Subtle background decorations */}
       <div style={{
         position:'fixed',inset:0,pointerEvents:'none',zIndex:0,
-        background:'radial-gradient(ellipse at 80% 10%,rgba(163,230,53,.04) 0%,transparent 50%)',
+        background:'radial-gradient(ellipse at 85% 5%,rgba(174,254,255,.12) 0%,transparent 45%)',
       }} />
       <div style={{
         position:'fixed',bottom:0,left:0,right:0,height:'1px',
-        background:'linear-gradient(90deg,transparent,rgba(163,230,53,.15),transparent)',
+        background:'linear-gradient(90deg,transparent,rgba(79,189,186,.2),transparent)',
         pointerEvents:'none',zIndex:0,
       }} />
 

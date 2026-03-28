@@ -15,10 +15,10 @@ function SkillCard({ sk, index }: { sk: Skill; index: number }) {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, scale: 0.9 }}
       transition={{ duration: 0.4, delay: index * 0.04 }}
-      whileHover={{ y: -4, borderColor: 'rgba(163,230,53,.4)' }}
+      whileHover={{ y: -4, borderColor: 'rgba(79,189,186,.4)' }}
     >
       <div className="sk-icon">
-        <img src={sk.icon} alt={sk.name} style={sk.invert ? { filter: 'invert(1)' } : {}} />
+        <img src={sk.icon} alt={sk.name} style={sk.invert ? { filter: 'invert(1) brightness(.4) sepia(1) hue-rotate(145deg) saturate(3)' } : {}} />
       </div>
       <div className="sk-info">
         <div className="sk-name">{sk.name}</div>
@@ -40,11 +40,10 @@ function SkillCard({ sk, index }: { sk: Skill; index: number }) {
 
 export default function Skills() {
   const [active, setActive] = useState<Tab>('All');
-
   const filtered = active === 'All' ? skills : skills.filter(s => s.cat === active.toLowerCase());
 
   return (
-    <section id="skills">
+    <section id="skills" className="skills-section">
       <div className="section-wrap">
         <div className="sec-header">
           <motion.div className="sec-tag" initial={{opacity:0,x:-20}} whileInView={{opacity:1,x:0}} viewport={{once:true}} transition={{duration:.5}}>02 — Skills</motion.div>

@@ -5,11 +5,41 @@ import { profile } from '../data/portfolio';
 import './About.css';
 
 const info = [
-  { icon: '📍', label: 'Lokasi',   value: profile.location },
-  { icon: '💼', label: 'Status',   value: profile.status },
-  { icon: '🐙', label: 'GitHub',   value: profile.githubUsername, href: profile.github },
-  { icon: '⚡', label: 'Fokus',    value: 'Web Dev · App Dev · Artificial Intelligence' },
-  { icon: '🌐', label: 'Bahasa',   value: 'Indonesia · English' },
+  {
+    iconSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
+    tinted: true,
+    label: 'GitHub',
+    value: profile.githubUsername,
+    href: profile.github,
+  },
+  {
+    iconSrc: 'https://cdn.simpleicons.org/gmail/35858B',
+    tinted: false,
+    label: 'Email',
+    value: profile.email,
+    href: `mailto:${profile.email}`,
+  },
+  {
+    iconSrc: 'https://cdn.simpleicons.org/instagram/35858B',
+    tinted: false,
+    label: 'Instagram',
+    value: profile.instagram,
+    href: '#',
+  },
+  {
+    iconSrc: 'https://cdn.simpleicons.org/googlemaps/35858B',
+    tinted: false,
+    label: 'Lokasi',
+    value: profile.location,
+    href: '#',
+  },
+  {
+    iconSrc: 'https://cdn.simpleicons.org/freelancer/35858B',
+    tinted: false,
+    label: 'Status',
+    value: profile.status,
+    href: '#',
+  },
 ];
 
 export default function About() {
@@ -39,7 +69,7 @@ export default function About() {
               <motion.h2 className="sec-title" initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} viewport={{once:true}} transition={{duration:.6,delay:.1}}>Tentang <em>Saya</em></motion.h2>
             </div>
             {[
-              <>Saya adalah seorang <strong>Full-Stack Developer</strong> yang passionate dalam membangun produk digital berkualitas tinggi. Dengan motto <em className="lime">„Evita, oppure assumitene il compito"</em> — saya selalu mengambil tanggung jawab penuh atas setiap proyek.</>,
+              <>Saya adalah seorang <strong>Full-Stack Developer</strong> yang passionate dalam membangun produk digital berkualitas tinggi. Dengan motto <em className="teal">„Evita, oppure assumitene il compito"</em> — saya selalu mengambil tanggung jawab penuh atas setiap proyek.</>,
               <>Fokus saya adalah menciptakan pengalaman web yang <strong>modern, performatif, dan user-friendly</strong> — dari antarmuka yang clean hingga sistem backend yang solid dan skalabel.</>,
               <>Berdomisili di <strong>Serang, Banten</strong>, saya terbuka untuk kolaborasi freelance dan proyek-proyek menarik dari seluruh Indonesia maupun internasional.</>,
             ].map((p, i) => (
@@ -52,19 +82,27 @@ export default function About() {
           <div className="about-right">
             <div className="info-grid">
               {info.map((item, i) => (
-                <motion.div key={i} className="info-row"
+                <motion.a
+                  key={i}
+                  href={item.href}
+                  target={item.href.startsWith('http') ? '_blank' : '_self'}
+                  rel="noreferrer"
+                  className="info-row"
                   initial={{opacity:0,x:24}} whileInView={{opacity:1,x:0}} viewport={{once:true}}
-                  transition={{duration:.5,delay:i*0.08}} whileHover={{x:4}}>
-                  <span className="info-icon">{item.icon}</span>
+                  transition={{duration:.5,delay:i*0.08}}
+                >
+                  <div className="info-icon-wrap">
+                    <img
+                      src={item.iconSrc}
+                      alt={item.label}
+                      className={`info-icon-img ${item.tinted ? 'info-icon-tinted' : ''}`}
+                    />
+                  </div>
                   <div>
                     <div className="info-lbl">{item.label}</div>
-                    <div className="info-val">
-                      {item.href
-                        ? <a href={item.href} target="_blank" rel="noreferrer" className="info-link">{item.value}</a>
-                        : item.value}
-                    </div>
+                    <div className="info-val">{item.value}</div>
                   </div>
-                </motion.div>
+                </motion.a>
               ))}
             </div>
           </div>
