@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap');
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+
+:root {
+  --bg:       #080A06;
+  --bg2:      #0D1008;
+  --bg3:      #12180D;
+  --bg4:      #171F10;
+  --lime:     #A3E635;
+  --lime2:    #BEF264;
+  --lime3:    #D9F99D;
+  --lime-dim: rgba(163,230,53,0.08);
+  --lime-glow:rgba(163,230,53,0.18);
+  --lime-border:rgba(163,230,53,0.22);
+  --text:     #F0F4E8;
+  --text-dim: #8A9E72;
+  --text-muted:#4A5E38;
+  --border:   rgba(163,230,53,0.07);
+  --border-md:rgba(163,230,53,0.14);
+  --font-head:'Syne',sans-serif;
+  --font-body:'Space Grotesk',sans-serif;
+  --font-mono:'JetBrains Mono',monospace;
+}
+
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:var(--font-body);font-weight:300;overflow-x:hidden;cursor:none;}
+a{color:inherit;text-decoration:none;}
+button{font-family:var(--font-body);}
+
+::-webkit-scrollbar{width:3px;}
+::-webkit-scrollbar-track{background:var(--bg);}
+::-webkit-scrollbar-thumb{background:var(--lime-dim);border-radius:2px;}
+::-webkit-scrollbar-thumb:hover{background:var(--lime);}
+::selection{background:var(--lime-glow);color:var(--lime);}
+
+.section-wrap{max-width:1280px;margin:0 auto;padding:110px 64px;}
+
+.sec-tag{
+  font-family:var(--font-mono);font-size:10px;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--lime);margin-bottom:12px;
+  display:flex;align-items:center;gap:10px;
+}
+.sec-tag::before{content:'';width:28px;height:1px;background:var(--lime);display:block;}
+
+.sec-title{
+  font-family:var(--font-head);
+  font-size:clamp(30px,3.8vw,52px);
+  font-weight:800;letter-spacing:-.03em;line-height:1.02;
+}
+.sec-title em{font-style:normal;color:var(--lime);}
+.sec-header{margin-bottom:60px;}
+
+@keyframes pulse-lime{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.4)}}
+@keyframes scanline{0%{transform:translateY(-100%)}100%{transform:translateY(100vh)}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes glow-pulse{0%,100%{box-shadow:0 0 20px rgba(163,230,53,.15)}50%{box-shadow:0 0 40px rgba(163,230,53,.35)}}
+
+@media(max-width:1024px){.section-wrap{padding:80px 32px;}}
+@media(max-width:640px){.section-wrap{padding:60px 20px;}}

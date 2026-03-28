@@ -1,0 +1,23 @@
+.contact-section{background:var(--bg2);}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
+.contact-intro{font-size:15px;line-height:1.85;color:var(--text-dim);margin-bottom:28px;}
+.c-links{display:flex;flex-direction:column;gap:10px;}
+.c-link{display:flex;align-items:center;gap:16px;padding:14px 18px;background:var(--bg3);border:1px solid var(--border);border-radius:8px;transition:border-color .3s,background .3s;}
+.c-link:hover{border-color:var(--lime-border);background:var(--bg4);}
+.c-link-icon{font-size:18px;width:32px;text-align:center;flex-shrink:0;}
+.c-lbl{font-family:var(--font-mono);font-size:9px;letter-spacing:.12em;color:var(--text-muted);text-transform:uppercase;}
+.c-val{font-size:13px;color:var(--text);margin-top:2px;}
+.c-link-arr{margin-left:auto;color:var(--lime);font-family:var(--font-mono);font-size:12px;opacity:0;transition:opacity .3s;}
+.c-link:hover .c-link-arr{opacity:1;}
+.cf{display:flex;flex-direction:column;gap:16px;}
+.cf-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.cf-group{display:flex;flex-direction:column;gap:7px;}
+.cf-label{font-family:var(--font-mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--text-muted);}
+.cf-input,.cf-ta{background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:13px 15px;color:var(--text);font-family:var(--font-body);font-size:14px;font-weight:300;outline:none;transition:border-color .3s;resize:none;}
+.cf-input:focus,.cf-ta:focus{border-color:var(--lime-border);box-shadow:0 0 0 2px rgba(163,230,53,.06);}
+.cf-input::placeholder,.cf-ta::placeholder{color:var(--text-muted);font-size:13px;}
+.cf-ta{min-height:120px;}
+.cf-btn{background:var(--lime);color:var(--bg);border:none;font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:15px 28px;border-radius:3px;cursor:none;transition:background .3s;font-weight:600;width:100%;}
+.cf-btn:hover{background:var(--lime2);}
+.cf-btn--sent{background:#22c55e !important;}
+@media(max-width:1024px){.contact-grid{grid-template-columns:1fr;gap:52px;}.cf-row{grid-template-columns:1fr;}}

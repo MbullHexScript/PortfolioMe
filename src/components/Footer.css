@@ -1,0 +1,9 @@
+.footer{border-top:1px solid var(--border);padding:48px 64px 36px;background:var(--bg);}
+.footer-inner{max-width:1280px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:24px;}
+.footer-logo{font-family:var(--font-head);font-size:24px;font-weight:800;letter-spacing:-.02em;}
+.footer-logo span{color:var(--lime);}
+.footer-links{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;}
+.footer-link{background:none;border:none;font-family:var(--font-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted);cursor:none;padding:6px 12px;border-radius:4px;transition:color .3s;}
+.footer-link:hover{color:var(--lime);}
+.footer-copy{font-family:var(--font-mono);font-size:10px;color:var(--text-muted);letter-spacing:.08em;text-align:center;}
+@media(max-width:640px){.footer{padding:36px 20px 28px;}}
