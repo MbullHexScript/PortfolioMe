@@ -33,4 +33,5 @@ npm run build      # production build
   ```ts
   // Ganti baris const PHOTO = 'data:image/png;base64,...'
   import PHOTO from '../assets/photo.jpg';
+  import PHOTO from '../asseets/photo.jpg';
   ```

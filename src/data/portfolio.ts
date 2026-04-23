@@ -36,7 +36,7 @@ export const skills: Skill[] = [
   { name: 'Node JS',      cat: 'framework', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',          level: 70, color: ['#339933','#4FBDBA'] },
   { name: 'GitHub',       cat: 'tool',      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',          level: 88, color: ['#35858B','#4FBDBA'], invert: true },
   { name: 'Canva',        cat: 'tool',      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg',            level: 80, color: ['#00C4CC','#4FBDBA'] },
-  { name: 'Firebase',     cat: 'framework', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg',         level: 65, color: ['#FFCA28','#4FBDBA'] },
+  { name: 'Python',     cat: 'language', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg',   level: 65, color: ['#FFCA28','#4FBDBA'] },
   { name: 'HTML',         cat: 'language',  icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',            level: 92, color: ['#E34F26','#4FBDBA'] },
   { name: 'CSS',          cat: 'language',  icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',              level: 88, color: ['#1572B6','#4FBDBA'] },
   { name: 'TypeScript',   cat: 'language',  icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',  level: 65, color: ['#3178C6','#4FBDBA'] },

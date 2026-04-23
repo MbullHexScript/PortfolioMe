@@ -48,38 +48,7 @@ export default function Hero() {
       <div ref={glowRef} className="hero-mouse-glow" aria-hidden />
 
       <div className="hero-wrap">
-        {/* Photo card — visible on mobile too via CSS grid reorder */}
-        <motion.div
-          className="hero-visual"
-          initial={{ opacity: 0, scale: 0.92 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={tr(0.3)}
-        >
-          <div className="hero-card">
-            <div className="hero-card-scan" aria-hidden />
-            <div className="hero-card-glow" aria-hidden />
-            <img className="hero-photo" src={PHOTO} alt="Naufal Afaf" />
-            <div className="hero-card-overlay" />
-            <div className="hero-card-info">
-              <div className="hci-name">Naufal Afaf</div>
-              <div className="hci-role">Web Developer</div>
-              <div className="hci-status">
-                <span className="hci-dot" />
-                @NaufalNyaa · Online
-              </div>
-            </div>
-            <span className="corner corner-tl" /><span className="corner corner-tr" />
-            <span className="corner corner-bl" /><span className="corner corner-br" />
-          </div>
-          <motion.div className="hero-badge hero-badge-1" initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={tr(0.7)}>
-            <div className="badge-n">6</div><div className="badge-l">Projects</div>
-          </motion.div>
-          <motion.div className="hero-badge hero-badge-2" initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={tr(0.85)}>
-            <div className="badge-n">12+</div><div className="badge-l">Tech Stack</div>
-          </motion.div>
-        </motion.div>
-
-        {/* Text content */}
+        {/* ── TEXT CONTENT — KIRI ── */}
         <div className="hero-left">
           <motion.div className="hero-chip" initial={{ opacity: 0, y: 32 }} animate={{ opacity: 1, y: 0 }} transition={tr(0.2)}>
             <span className="hero-chip-dot" />
@@ -122,6 +91,37 @@ export default function Hero() {
             ))}
           </motion.div>
         </div>
+
+        {/* ── PHOTO CARD — KANAN ── */}
+        <motion.div
+          className="hero-visual"
+          initial={{ opacity: 0, scale: 0.92 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={tr(0.3)}
+        >
+          <div className="hero-card">
+            <div className="hero-card-scan" aria-hidden />
+            <div className="hero-card-glow" aria-hidden />
+            <img className="hero-photo" src={PHOTO} alt="Naufal Afaf" />
+            <div className="hero-card-overlay" />
+            <div className="hero-card-info">
+              <div className="hci-name">Naufal Afaf</div>
+              <div className="hci-role">Web Developer</div>
+              <div className="hci-status">
+                <span className="hci-dot" />
+                @NaufalNyaa · Online
+              </div>
+            </div>
+            <span className="corner corner-tl" /><span className="corner corner-tr" />
+            <span className="corner corner-bl" /><span className="corner corner-br" />
+          </div>
+          <motion.div className="hero-badge hero-badge-1" initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={tr(0.7)}>
+            <div className="badge-n">6</div><div className="badge-l">Projects</div>
+          </motion.div>
+          <motion.div className="hero-badge hero-badge-2" initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={tr(0.85)}>
+            <div className="badge-n">12+</div><div className="badge-l">Tech Stack</div>
+          </motion.div>
+        </motion.div>
       </div>
 
       <motion.div className="hero-scroll" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2, duration: 0.6 }}>
