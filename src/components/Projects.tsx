@@ -57,7 +57,6 @@ export default function Projects() {
 
                 {!p.image && (
                   <div className="proj-emoji-wrap">
-                    <span className="proj-fallback-emoji">{p.emoji}</span>
                     <div className="proj-fallback-grid" aria-hidden>
                       {Array.from({ length: 6 }).map((_, j) => (
                         <span key={j} className="proj-fallback-line" />

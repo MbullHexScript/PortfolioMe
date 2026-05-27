@@ -37,7 +37,6 @@ const info = [
     iconSrc: 'https://cdn.simpleicons.org/freelancer/35858B',
     tinted: false,
     label: 'Status',
-    value: profile.status,
     href: '#',
   },
 ];
