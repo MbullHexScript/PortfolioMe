@@ -17,6 +17,7 @@ export const profile = {
   github: 'https://github.com/MbullHexScript',
   githubUsername: 'MbullHexScript',
   instagram: '@AlwaysVodka_',
+  status: 'Open to Freelance Work',
 };
 
 export const stats: Stat[] = [
