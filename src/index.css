@@ -3,13 +3,13 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 
 :root {
-  /* New color palette */
+  /* palet warnaa */
   --deep:     #072227;
   --teal:     #35858B;
   --cyan:     #4FBDBA;
   --sky:      #AEFEFF;
 
-  /* Backgrounds - white theme */
+  /* Backgrounds tema putih */
   --bg:       #FFFFFF;
   --bg2:      #F5FAFA;
   --bg3:      #EBF6F6;

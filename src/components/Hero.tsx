@@ -50,11 +50,6 @@ export default function Hero() {
       <div className="hero-wrap">
         {/* ── TEXT CONTENT — KIRI ── */}
         <div className="hero-left">
-          <motion.div className="hero-chip" initial={{ opacity: 0, y: 32 }} animate={{ opacity: 1, y: 0 }} transition={tr(0.2)}>
-            <span className="hero-chip-dot" />
-            <span>Available · Open to Freelance</span>
-          </motion.div>
-
           <motion.h1 className="hero-name" initial={{ opacity: 0, y: 32 }} animate={{ opacity: 1, y: 0 }} transition={tr(0.35)}>
             <span className="hero-name-top">Naufal</span>
             <span className="hero-name-bot">
@@ -65,7 +60,7 @@ export default function Hero() {
 
           <motion.div className="hero-role" initial={{ opacity: 0, y: 32 }} animate={{ opacity: 1, y: 0 }} transition={tr(0.45)}>
             <span className="hero-role-line" />
-            Full-Stack Developer
+            Software Engineer
           </motion.div>
 
           <motion.p className="hero-desc" initial={{ opacity: 0, y: 32 }} animate={{ opacity: 1, y: 0 }} transition={tr(0.5)}>
@@ -106,7 +101,7 @@ export default function Hero() {
             <div className="hero-card-overlay" />
             <div className="hero-card-info">
               <div className="hci-name">Naufal Afaf</div>
-              <div className="hci-role">Web Developer</div>
+              <div className="hci-role">Software Engineer</div>
               <div className="hci-status">
                 <span className="hci-dot" />
                 @NaufalNyaa · Online

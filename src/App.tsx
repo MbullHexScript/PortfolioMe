@@ -13,7 +13,6 @@ export default function App() {
   return (
     <>
       <Cursor />
-      {/* Subtle background decorations */}
       <div style={{
         position:'fixed',inset:0,pointerEvents:'none',zIndex:0,
         background:'radial-gradient(ellipse at 85% 5%,rgba(174,254,255,.12) 0%,transparent 45%)',

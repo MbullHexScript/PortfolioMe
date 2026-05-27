@@ -69,9 +69,9 @@ export default function About() {
               <motion.h2 className="sec-title" initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} viewport={{once:true}} transition={{duration:.6,delay:.1}}>Tentang <em>Saya</em></motion.h2>
             </div>
             {[
-              <>Saya adalah seorang <strong>Full-Stack Developer</strong> yang passionate dalam membangun produk digital berkualitas tinggi. Dengan motto <em className="teal">„Evita, oppure assumitene il compito"</em> — saya selalu mengambil tanggung jawab penuh atas setiap proyek.</>,
-              <>Fokus saya adalah menciptakan pengalaman web yang <strong>modern, performatif, dan user-friendly</strong> — dari antarmuka yang clean hingga sistem backend yang solid dan skalabel.</>,
-              <>Berdomisili di <strong>Serang, Banten</strong>, saya terbuka untuk kolaborasi freelance dan proyek-proyek menarik dari seluruh Indonesia maupun internasional.</>,
+              <>Saya adalah seorang <strong>Software Engineer</strong> yang berfokus pada pengembangan utilitas ringan, model machine learning, dan eksplorasi teknologi IoT.</>,
+              <>Saya terbiasa membangun software menggunakan <strong>Python, Lua, C++, C#, dan Dart</strong>, mulai dari scripting, backend systems, hingga aplikasi lintas platform dan integrasi perangkat.</>,
+              <>Saya tertarik pada bagaimana sebuah ide dapat diubah menjadi sistem yang efisien, scalable, dan memiliki fungsi nyata di dunia digital maupun hardware.</>,
             ].map((p, i) => (
               <motion.p key={i} className="about-p" initial={{opacity:0,y:16}} whileInView={{opacity:1,y:0}} viewport={{once:true}} transition={{duration:.55,delay:i*0.1}}>
                 {p}

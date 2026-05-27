@@ -11,7 +11,7 @@ export interface Project {
   name: string;
   desc: string;
   tags: string[];
-  emoji: string;
+  //EMJ CEK BIASA AJA
   image?: string;
   bg: string;
   demo: string;
